@@ -4,18 +4,31 @@
     --primary-color: #8B0000;
     /* Deep Burgundy */
     --primary-dark: #600000;
-    --gold-accent: #D4AF37;
-    /* Metallic Gold */
+    --gold-accent: #C5A059;
+    /* Elegant Gold */
     --gold-light: #F4DF8D;
+
     --dark-bg: #1A1A1A;
-    --light-bg: #F9F9F9;
-    --glass-bg: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.2);
+    --light-bg: #FAFAF9;
+    /* Warm White Background */
+    --card-bg: #FFFFFF;
+    /* Pure White Card */
+
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    /* Frosted Light Glass */
+    --glass-border: rgba(200, 200, 200, 0.3);
+
     --text-dark: #2C2C2C;
+    /* Soft Black */
     --text-light: #F0F0F0;
-    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
+    --text-muted: #666666;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    /* Soft, diffuse lift */
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
+    /* Clean floating effect */
+    --shadow-gold: 0 4px 15px rgba(197, 160, 89, 0.3);
 }
 
 /* ===============================
@@ -32,6 +45,8 @@ body {
     color: var(--text-dark);
     background-color: var(--light-bg);
     overflow-x: hidden;
+    line-height: 1.7;
+    /* Improved readability */
 }
 
 h1,
@@ -68,18 +83,23 @@ h6 {
     background-color: #111 !important;
 }
 
+/* Modern Button Styles */
 .btn-gold {
     background: linear-gradient(135deg, var(--gold-accent), #B8860B);
     color: #fff;
     border: none;
-    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(184, 134, 11, 0.2);
 }
 
 .btn-gold:hover {
     background: linear-gradient(135deg, #B8860B, var(--gold-accent));
-    color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 20px rgba(184, 134, 11, 0.3);
 }
 
 .hover-lift {
@@ -131,7 +151,7 @@ h6 {
 ================================== */
 .main-navbar {
     transition: all 0.4s ease;
-    padding: 1.5rem 0;
+    padding: 10px 20px;
 }
 
 .main-navbar.scrolled {
@@ -191,40 +211,68 @@ h6 {
 /* ===============================
    HERO SECTION
 ================================== */
+/* ===============================
+   HERO SECTION
+================================== */
+.cta-section {
+    background: var(--dark-bg);
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, #2b0a0a, #4a0404);
+    background: linear-gradient(135deg, #2b0a0a 0%, #4a0404 100%);
     overflow: hidden;
+    position: relative;
+    color: #FFFFFF;
+    /* Ensure text is white */
 }
 
 .hero-bg-overlay {
     position: absolute;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C5A059' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     z-index: 1;
+    opacity: 0.4;
+    /* Subtle pattern */
 }
 
 .hero-title {
     line-height: 1.1;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
 }
 
 .hero-btn-primary {
-    padding: 15px 35px;
+    padding: 15px 40px;
     font-weight: 600;
     border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero-btn-secondary {
-    padding: 15px 35px;
+    padding: 15px 40px;
     border-radius: 50px;
-    border-width: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     font-weight: 600;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
 }
 
 .hero-btn-secondary:hover {
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: var(--primary-color);
+    border-color: #FFFFFF;
 }
 
 /* Floating Animation for Hero Image */
@@ -326,50 +374,58 @@ h6 {
    OFFERS SECTION
 ================================== */
 .bg-light-pattern {
-    background-color: #f8f9fa;
-    background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+    background-color: var(--light-bg);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
     background-size: 20px 20px;
 }
 
 .product-card {
     border-radius: 20px;
     overflow: hidden;
-    background: #fff;
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    /* Subtle border */
     box-shadow: var(--shadow-sm);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
+    border-color: rgba(197, 160, 89, 0.3);
+    /* Gold hint on hover */
 }
 
 .product-img-wrapper {
     position: relative;
-    height: 250px;
+    height: 260px;
+    overflow: hidden;
 }
 
 .product-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
 }
 
 .product-card:hover .product-img {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .card-badge {
     position: absolute;
     top: 15px;
     left: 15px;
-    padding: 5px 12px;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.8rem;
+    padding: 6px 14px;
+    border-radius: 30px;
+    /* Rounded badge */
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
     z-index: 10;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
 }
 
 .overlay {
@@ -397,23 +453,25 @@ h6 {
    CATEGORIES (Glassmorphism)
 ================================== */
 .categories-section {
-    background: linear-gradient(to bottom, #fff, #f4f4f4);
+    background: linear-gradient(to bottom, #FFFFFF, var(--light-bg));
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Subtle border */
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    /* Softer initial shadow */
+    transition: all 0.4s ease;
 }
 
 .glass-card:hover {
-    background: rgba(255, 255, 255, 0.9);
-    transform: translateY(-5px);
+    background: #FFFFFF;
+    transform: translateY(-8px);
     border-color: var(--gold-accent);
-    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.15);
+    box-shadow: var(--shadow-md);
 }
 
 .cat-link {
@@ -459,11 +517,17 @@ h6 {
 ================================== */
 .location-card {
     border-radius: 20px;
-    border-bottom: 4px solid transparent;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.05);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var(--shadow-sm);
 }
 
 .location-card:hover {
     border-bottom-color: var(--gold-accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
 }
 
 .icon-circle {
@@ -473,13 +537,21 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(197, 160, 89, 0.1);
+    color: var(--gold-accent);
+}
+
+.icon-circle i {
+    color: var(--gold-accent) !important;
 }
 
 /* ===============================
    FOOTER
 ================================== */
 .footer-section {
-    background: #0a0a0a;
+    background: var(--dark-bg);
+    /* Use variable for consistency */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-link {
