@@ -4,10 +4,503 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Yebo Eggs | Premium Farm Fresh</title>
 </head>
 
 <body>
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/27832746236" target="_blank" class="whatsapp-float hover-scale">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="main-navbar navbar navbar-expand-lg fixed-top glass-effect">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="#">
+                    <span class="text-gold">Yebo</span> Eggs
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon-custom"><i class="bi bi-list text-white fs-2"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto navbar-menu">
+                        <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#bulk">Bulk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+                    </ul>
+                    <a href="https://wa.me/27832746236" target="_blank" class="btn btn-gold navbar-btn ms-3 hover-lift">
+                        Order Now
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION START -->
+        <section class="hero-section position-relative d-flex align-items-center">
+            <div class="hero-bg-overlay"></div>
+            <div class="container position-relative z-2">
+                <div class="row align-items-center min-vh-100">
+
+                    <div class="col-lg-6 hero-content text-white animate-on-scroll fade-up">
+                        <div class="badge-premium mb-3">
+                            <span
+                                class="badge bg-gold text-dark px-3 py-2 rounded-pill text-uppercase spacing-2">Premium
+                                Quality</span>
+                        </div>
+                        <h1 class="hero-title display-3 fw-bold mb-4">
+                            Farm Fresh <span class="text-gold">Eggs</span> & <br> Quality <span
+                                class="text-gold">Meats</span>
+                        </h1>
+
+                        <p class="hero-subtitle lead mb-5">
+                            Direct from our trusted farmers in Durban. Experience the difference of true freshness.
+                            Affordable luxury for your table.
+                        </p>
+
+                        <div class="hero-buttons d-flex flex-wrap gap-3">
+                            <a href="#offers" class="btn btn-gold btn-lg hero-btn-primary hover-lift">
+                                View Today’s Specials
+                            </a>
+
+                            <a href="https://wa.me/27832746236" target="_blank"
+                                class="btn btn-outline-light btn-lg hero-btn-secondary hover-lift">
+                                <i class="bi bi-whatsapp me-2"></i> Order via WhatsApp
+                            </a>
+                        </div>
+
+                        <div
+                            class="hero-trust mt-5 d-flex align-items-center gap-3 animate-on-scroll fade-up delay-200">
+                            <div class="avatars d-flex">
+                                <div class="avatar-circle bg-white border border-2 border-gold"></div>
+                                <div class="avatar-circle bg-white border border-2 border-gold"
+                                    style="margin-left: -15px;"></div>
+                                <div class="avatar-circle bg-white border border-2 border-gold"
+                                    style="margin-left: -15px;"></div>
+                            </div>
+                            <div class="trust-text">
+                                <p class="mb-0 fw-bold">7,000+ Happy Customers</p>
+                                <small class="text-white-50">Rated 5 Stars across Durban</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 text-center hero-image-wrapper animate-on-scroll fade-left delay-400">
+                        <div class="hero-image-container">
+                            <div class="blob-bg"></div>
+                            <img src="images/hero-eggs.png" alt="Fresh Eggs" class="img-fluid hero-image floating-anim">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- HERO SECTION END -->
+
+        <!-- WHY CHOOSE US START -->
+        <section class="why-section py-6">
+            <div class="container">
+
+                <div class="section-header text-center mb-5 animate-on-scroll fade-up">
+                    <h5 class="text-gold text-uppercase spacing-2">Our Promise</h5>
+                    <h2 class="section-title display-5">Why Choose Yebo Eggs?</h2>
+                    <div class="divider mx-auto my-3"></div>
+                    <p class="section-subtitle text-muted w-75 mx-auto">
+                        We don't just sell eggs; we deliver a promise of quality, freshness, and unbeatable value
+                        directly to your doorstep.
+                    </p>
+                </div>
+
+                <div class="row g-4 why-cards">
+
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-100">
+                        <div class="feature-card text-center p-4 h-100 hover-lift">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon-box">🥚</span>
+                            </div>
+                            <h5 class="feature-title mb-3">Farm Direct</h5>
+                            <p class="feature-text text-muted">
+                                Fresh eggs, chicken, and beef directly sourced from trusted local farmers. No middlemen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-200">
+                        <div class="feature-card text-center p-4 h-100 hover-lift">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon-box">💰</span>
+                            </div>
+                            <h5 class="feature-title mb-3">Affordable Pricing</h5>
+                            <p class="feature-text text-muted">
+                                Premium quality doesn't have to be expensive. Best prices in Durban with bulk discounts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-300">
+                        <div class="feature-card text-center p-4 h-100 hover-lift">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon-box">🚚</span>
+                            </div>
+                            <h5 class="feature-title mb-3">Bulk Ready</h5>
+                            <p class="feature-text text-muted">
+                                Perfect for resellers, bakeries, and large families. We handle orders of any size.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-400">
+                        <div class="feature-card text-center p-4 h-100 hover-lift">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon-box">⭐</span>
+                            </div>
+                            <h5 class="feature-title mb-3">Community Love</h5>
+                            <p class="feature-text text-muted">
+                                Trusted by over 7,000 customers in Reservoir Hills and beyond.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- WHY CHOOSE US END -->
+
+        <!-- TODAY'S OFFERS SECTION -->
+        <section id="offers" class="offers-section py-6 bg-light-pattern">
+            <div class="container">
+
+                <div class="section-header text-center mb-5 animate-on-scroll fade-up">
+                    <h5 class="text-gold text-uppercase spacing-2">Exclusive Deals</h5>
+                    <h2 class="section-title display-5">Today’s Specials</h2>
+                    <div class="divider mx-auto my-3"></div>
+                    <p class="section-subtitle text-muted w-75 mx-auto">
+                        Grab these limited-time offers while stocks last. Freshness guaranteed.
+                    </p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Offer Card 1 -->
+                    <div class="col-md-6 col-lg-4 animate-on-scroll fade-up delay-100">
+                        <div class="product-card position-relative h-100 hover-scale-img">
+                            <div class="card-badge bg-danger text-white">HOT</div>
+                            <div class="product-img-wrapper overflow-hidden">
+                                <img src="images/eggs-30.jpg" class="img-fluid product-img" alt="30 Eggs">
+                                <div class="overlay d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i
+                                            class="bi bi-cart-plus fs-4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="product-content p-4 text-center bg-white">
+                                <h4 class="product-title font-cinzel">30 Eggs Tray</h4>
+                                <p class="text-muted small mb-3">Fresh medium sized eggs</p>
+                                <div class="price-wrapper mb-3">
+                                    <span class="currency text-gold">R</span><span
+                                        class="amount display-6 fw-bold text-dark">25</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-dark w-100 rounded-pill hover-fill">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offer Card 2 -->
+                    <div class="col-md-6 col-lg-4 animate-on-scroll fade-up delay-200">
+                        <div class="product-card position-relative h-100 hover-scale-img">
+                            <div class="card-badge bg-gold text-dark">BULK</div>
+                            <div class="product-img-wrapper overflow-hidden">
+                                <img src="images/chicken-feet.jpg" class="img-fluid product-img" alt="Chicken Feet">
+                                <div class="overlay d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn btn-light rounded-circle p-3"><i
+                                            class="bi bi-cart-plus fs-4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="product-content p-4 text-center bg-white">
+                                <h4 class="product-title font-cinzel">10kg Chicken Feet</h4>
+                                <p class="text-muted small mb-3">Cleaned & ready for pot</p>
+                                <div class="price-wrapper mb-3">
+                                    <span class="currency text-gold">R</span><span
+                                        class="amount display-6 fw-bold text-dark">130</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-dark w-100 rounded-pill hover-fill">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TODAY'S OFFERS SECTION END -->
+
+        <!-- CATEGORIES SECTION -->
+        <section id="categories" class="categories-section py-6">
+            <div class="container">
+
+                <div class="section-header text-center mb-5 animate-on-scroll fade-up">
+                    <h5 class="text-gold text-uppercase spacing-2">Our Selection</h5>
+                    <h2 class="section-title display-5">Browse Categories</h2>
+                    <div class="divider mx-auto my-3"></div>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Category 1 -->
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-100">
+                        <div class="category-card p-4 text-center glass-card h-100">
+                            <div class="cat-icon mb-3 text-gold display-4"><i class="bi bi-egg-fill"></i></div>
+                            <h4 class="font-cinzel mb-2">Eggs</h4>
+                            <p class="text-muted small">Small, Medium, Jumbo & Bulk trays</p>
+                            <a href="#" class="cat-link text-uppercase text-gold fw-bold small">Explore <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-200">
+                        <div class="category-card p-4 text-center glass-card h-100">
+                            <div class="cat-icon mb-3 text-gold display-4"><i class="bi bi-patch-check-fill"></i></div>
+                            <h4 class="font-cinzel mb-2">Fresh Chicken</h4>
+                            <p class="text-muted small">Feet, Neck, Livers, Whole Birds & Cuts</p>
+                            <a href="#" class="cat-link text-uppercase text-gold fw-bold small">Explore <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-300">
+                        <div class="category-card p-4 text-center glass-card h-100">
+                            <div class="cat-icon mb-3 text-gold display-4"><i class="bi bi-heptagon-half"></i></div>
+                            <h4 class="font-cinzel mb-2">Beef Products</h4>
+                            <p class="text-muted small">Meaty bones, stewing beef & bulk packs</p>
+                            <a href="#" class="cat-link text-uppercase text-gold fw-bold small">Explore <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="col-md-6 col-lg-3 animate-on-scroll fade-up delay-400">
+                        <div class="category-card p-4 text-center glass-card h-100">
+                            <div class="cat-icon mb-3 text-gold display-4"><i class="bi bi-snow2"></i></div>
+                            <h4 class="font-cinzel mb-2">Frozen Items</h4>
+                            <p class="text-muted small">Pies, nuggets & special frozen deals</p>
+                            <a href="#" class="cat-link text-uppercase text-gold fw-bold small">Explore <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- CATEGORIES SECTION END -->
+
+
+        <!-- BULK ORDERS SECTION -->
+        <section id="bulk" class="bulk-section py-6 position-relative text-white overflow-hidden">
+            <div class="bg-overlay-dark"></div>
+            <div class="container position-relative z-2">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll fade-right">
+                        <span class="badge bg-gold text-dark mb-3">Wholesale Available</span>
+                        <h2 class="display-4 font-cinzel fw-bold mb-4">Partner With Us for Bulk & Wholesale</h2>
+                        <p class="lead mb-5 text-white-50">
+                            Perfect for resellers, catering businesses, and large families.
+                            Unlock special tiered pricing when you order in bulk.
+                        </p>
+
+                        <ul class="list-unstyled bulk-list mb-5">
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-gold me-3 fs-5"></i>
+                                <span>Exclusive reseller pricing tiers</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-gold me-3 fs-5"></i>
+                                <span>Priority stock allocation</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="bi bi-whatsapp text-gold me-3 fs-5"></i>
+                                <span>Direct WhatsApp ordering line</span>
+                            </li>
+                        </ul>
+
+                        <a href="https://wa.me/27832746236" target="_blank"
+                            class="btn btn-gold btn-lg rounded-pill px-5 hover-lift text-dark fw-bold">
+                            Get Bulk Pricing
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 text-center animate-on-scroll fade-left">
+                        <div class="glass-panel p-2 d-inline-block rounded-3 transform-rotate">
+                            <img src="images/bulk-eggs.jpg" alt="Bulk Orders" class="img-fluid rounded-3 shadow-lg"
+                                style="max-height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- BULK ORDERS SECTION END -->
+
+
+        <!-- LOCATIONS SECTION -->
+        <section id="locations" class="locations-section py-6 bg-light-pattern">
+            <div class="container">
+
+                <div class="section-header text-center mb-5 animate-on-scroll fade-up">
+                    <h5 class="text-gold text-uppercase spacing-2">Visit Us</h5>
+                    <h2 class="section-title display-5">Our Stores</h2>
+                    <div class="divider mx-auto my-3"></div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-md-6 col-lg-4 animate-on-scroll fade-up delay-100">
+                        <div
+                            class="location-card bg-white p-5 text-center h-100 shadow-sm hover-lift border-bottom-gold">
+                            <div class="icon-circle bg-light mb-4 mx-auto">
+                                <i class="bi bi-geo-alt-fill text-danger fs-3"></i>
+                            </div>
+                            <h4 class="font-cinzel mb-3">Reservoir Hills</h4>
+                            <p class="text-muted mb-4">
+                                21 Shannon Drive<br>
+                                Durban, KwaZulu-Natal
+                            </p>
+                            <a href="https://wa.me/27832746236" target="_blank"
+                                class="btn btn-outline-dark btn-sm rounded-pill px-4">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 animate-on-scroll fade-up delay-200">
+                        <div
+                            class="location-card bg-white p-5 text-center h-100 shadow-sm hover-lift border-bottom-gold">
+                            <div class="icon-circle bg-light mb-4 mx-auto">
+                                <i class="bi bi-geo-alt-fill text-danger fs-3"></i>
+                            </div>
+                            <h4 class="font-cinzel mb-3">South Beach</h4>
+                            <p class="text-muted mb-4">
+                                46 Prince Street<br>
+                                Durban, KwaZulu-Natal
+                            </p>
+                            <a href="#" class="btn btn-outline-dark btn-sm rounded-pill px-4">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 animate-on-scroll fade-up delay-300">
+                        <div
+                            class="location-card bg-white p-5 text-center h-100 shadow-sm hover-lift border-bottom-gold">
+                            <div class="icon-circle bg-light mb-4 mx-auto">
+                                <i class="bi bi-geo-alt-fill text-danger fs-3"></i>
+                            </div>
+                            <h4 class="font-cinzel mb-3">North Beach</h4>
+                            <p class="text-muted mb-4">
+                                Durban Central<br>
+                                KwaZulu-Natal
+                            </p>
+                            <a href="#" class="btn btn-outline-dark btn-sm rounded-pill px-4">Get Directions</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- LOCATIONS SECTION END -->
+
+        <!-- CTA SECTION -->
+        <section class="cta-section py-5 bg-dark text-white text-center">
+            <div class="container animate-on-scroll zoom-in">
+                <i class="bi bi-stars text-gold display-4 mb-3 d-block"></i>
+                <h2 class="font-cinzel mb-4">Experience the Taste of Quality</h2>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://wa.me/27832746236" class="btn btn-gold btn-lg rounded-pill px-5">Join 7,000+ Happy
+                        Customers</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-section pt-6 pb-4 bg-darker text-white">
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- About -->
+                <div class="col-lg-4 footer-about">
+                    <h4 class="footer-title font-cinzel text-white mb-4"><span class="text-gold">Yebo</span> Eggs</h4>
+                    <p class="text-white-50 mb-4">
+                        Providing Durban with the freshest farm produce. We bridge the gap between local farmers and
+                        your kitchen table, ensuring quality and affordability every time.
+                    </p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-6 col-lg-4 footer-links">
+                    <h5 class="font-inter fw-bold mb-4 text-white">Quick Links</h5>
+                    <ul class="list-unstyled footer-menu">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#offers" class="footer-link">Today's Specials</a></li>
+                        <li><a href="#categories" class="footer-link">Our Categories</a></li>
+                        <li><a href="#bulk" class="footer-link">Bulk Ordering</a></li>
+                        <li><a href="#locations" class="footer-link">Find a Store</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-6 col-lg-4 footer-contact">
+                    <h5 class="font-inter fw-bold mb-4 text-white">Contact Us</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3"><i class="bi bi-geo-alt text-gold me-2"></i> Durban, KwaZulu-Natal</li>
+                        <li class="mb-3"><i class="bi bi-telephone text-gold me-2"></i> 083 274 6236</li>
+                        <li class="mb-3"><i class="bi bi-envelope text-gold me-2"></i> info@yeboeggs.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider my-5 border-secondary">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50 small">
+                        © 2026 Yebo Eggs. All Rights Reserved. Designed with <i
+                            class="bi bi-heart-fill text-danger"></i>.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-white-50 small text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 small text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
