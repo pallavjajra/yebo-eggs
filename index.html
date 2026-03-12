@@ -130,19 +130,38 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-lg-6">
-                        <h2 class="display-5">About Yebo Eggs</h2>
-                        <p>
+                    <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll fade-right">
+                        <h5 class="text-gold text-uppercase mb-3">Our Story</h5>
+                        <h2 class="display-5 font-cinzel mb-4">About Yebo Eggs</h2>
+                        <p class="lead text-muted mb-4">
                             Yebo Eggs is a proudly Durban-based retailer providing fresh eggs and affordable food
                             products directly to the public at wholesale prices.
                         </p>
-
-                        <p>
-                            Our mission is simple: make quality everyday essentials accessible to everyone by cutting
-                            out unnecessary middlemen and passing the savings directly to our customers.
+                        <p class="text-muted mb-4">
+                            Our mission is simple: make quality, everyday essentials accessible to everyone by cutting
+                            out unnecessary middlemen and passing the savings directly to our customers. With stores in
+                            Reservoir Hills, South Beach, and North Beach, we serve households, spaza shops, caterers,
+                            and bulk buyers across eThekwini.
                         </p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center mb-2"><i
+                                    class="bi bi-check-circle-fill text-gold me-2"></i> High turnover & fresh stock</li>
+                            <li class="d-flex align-items-center mb-2"><i
+                                    class="bi bi-check-circle-fill text-gold me-2"></i> Unbeatable value & wholesale
+                                prices</li>
+                            <li class="d-flex align-items-center mb-2"><i
+                                    class="bi bi-check-circle-fill text-gold me-2"></i> Open directly to the public</li>
+                        </ul>
+                        <p class="fw-bold mb-0">At Yebo Eggs, we believe good food should be affordable, accessible, and
+                            reliable.</p>
                     </div>
 
+                    <div class="col-lg-6 animate-on-scroll fade-left">
+                        <div class="about-image-grid">
+
+                            <img src="./assets/images/about-img.png" alt="Yebo Eggs Products" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -284,34 +303,264 @@
         </section>
         <!-- TODAY'S OFFERS SECTION END -->
 
-        <section id="products" class="products-section py-6">
+        <section id="products" class="products-section py-6 bg-light text-center">
             <div class="container">
 
-                <div class="section-header text-center mb-5">
-                    <h5 class="text-gold text-uppercase">Our Products</h5>
+                <div class="section-header text-center mb-5 animate-on-scroll fade-up">
+                    <h5 class="text-gold text-uppercase spacing-2">Premium Selection</h5>
                     <h2 class="section-title display-5">Our Full Product Range</h2>
+                    <div class="divider mx-auto my-3"></div>
+                    <p class="section-subtitle text-muted w-75 mx-auto">
+                        We offer a wide variety of high-quality products. Wholesale prices, open to the public.
+                    </p>
                 </div>
 
-                <h4>Eggs</h4>
-                <ul>
-                    <li>Small Brown Eggs – 30 Pack</li>
-                    <li>Medium Eggs – 30 Pack</li>
-                    <li>Large Brown Mix Eggs – 30 Pack</li>
-                    <li>Extra Large – 30 Pack</li>
-                    <li>Jumbo – 30 Pack</li>
-                    <li>Double Yolk – 30 Pack</li>
-                    <li>Taxi Pack – 60 Eggs</li>
+                <!-- Custom Tabs -->
+                <ul class="nav nav-pills justify-content-center mb-5 custom-tabs animate-on-scroll fade-up delay-100"
+                    id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="eggs-tab" data-bs-toggle="pill" data-bs-target="#eggs"
+                            type="button" role="tab" aria-controls="eggs" aria-selected="true">
+                            <i class="bi bi-egg-fill me-2"></i>Eggs
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="poultry-tab" data-bs-toggle="pill" data-bs-target="#poultry"
+                            type="button" role="tab" aria-controls="poultry" aria-selected="false">
+                            <i class="bi bi-patch-check-fill me-2"></i>Poultry
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="beef-tab" data-bs-toggle="pill" data-bs-target="#beef"
+                            type="button" role="tab" aria-controls="beef" aria-selected="false">
+                            <i class="bi bi-heptagon-half me-2"></i>Beef
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pantry-tab" data-bs-toggle="pill" data-bs-target="#pantry"
+                            type="button" role="tab" aria-controls="pantry" aria-selected="false">
+                            <i class="bi bi-basket-fill me-2"></i>Bakery & Pantry
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks"
+                            type="button" role="tab" aria-controls="drinks" aria-selected="false">
+                            <i class="bi bi-cup-straw me-2"></i>Snacks & Beverages
+                        </button>
+                    </li>
                 </ul>
 
-                <h4>Frozen Poultry</h4>
-                <ul>
-                    <li>Chicken Gizzards – 1kg</li>
-                    <li>Chicken Hearts – 1kg</li>
-                    <li>Chicken Livers – 1kg</li>
-                    <li>Chicken Necks – 1kg</li>
-                    <li>Chicken Feet – 4kg</li>
-                </ul>
+                <div class="tab-content animate-on-scroll fade-up delay-200" id="productTabsContent">
 
+                    <!-- EGGS TAB -->
+                    <div class="tab-pane fade show active" id="eggs" role="tabpanel" aria-labelledby="eggs-tab">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Small Brown Eggs</h5><span
+                                        class="badge bg-gold text-dark">30 Pack</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Medium Eggs</h5><span
+                                        class="badge bg-gold text-dark">30 Pack</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Large Brown Mix Eggs</h5><span
+                                        class="badge bg-gold text-dark">30 Pack</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Extra Large Eggs</h5><span
+                                        class="badge bg-gold text-dark">30 Pack</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Jumbo Eggs</h5><span
+                                        class="badge bg-gold text-dark">30 Pack</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Double Yolk</h5><span
+                                        class="badge bg-gold text-dark">30 Pack</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Taxi Pack</h5><span
+                                        class="badge bg-gold text-dark">60 Eggs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- POULTRY TAB -->
+                    <div class="tab-pane fade" id="poultry" role="tabpanel" aria-labelledby="poultry-tab">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Chicken Gizzards</h5><span
+                                        class="badge bg-gold text-dark">1kg</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Chicken Hearts</h5><span
+                                        class="badge bg-gold text-dark">1kg</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Chicken Livers</h5><span
+                                        class="badge bg-gold text-dark">1kg</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Chicken Necks</h5><span
+                                        class="badge bg-gold text-dark">1kg</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Chicken Feet</h5><span
+                                        class="badge bg-gold text-dark">4kg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BEEF TAB -->
+                    <div class="tab-pane fade" id="beef" role="tabpanel" aria-labelledby="beef-tab">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Qhoqhoqho</h5><span
+                                        class="badge bg-gold text-dark">Beef Cut</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Meaty Bones</h5><span
+                                        class="badge bg-gold text-dark">5kg</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Meaty Bones</h5><span
+                                        class="badge bg-gold text-dark">10kg</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Stewing Beef</h5><span
+                                        class="badge badge-outline-gold">Fresh Cut</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-item-card glass-card p-4 text-center h-100">
+                                    <h5 class="font-cinzel text-dark mb-2">Curry Beef</h5><span
+                                        class="badge badge-outline-gold">Fresh Cut</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BAKERY & PANTRY TAB -->
+                    <div class="tab-pane fade" id="pantry" role="tabpanel" aria-labelledby="pantry-tab">
+                        <div class="row align-items-center justify-content-center g-4">
+                            <div class="col-lg-8">
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Snack Rolls</h5><span
+                                                class="badge badge-outline-gold">Bakery</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Snack Pies</h5><span
+                                                class="badge badge-outline-gold">Bakery</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Backed Pies</h5><span
+                                                class="badge badge-outline-gold">Bakery</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Peanut Butter</h5><span
+                                                class="badge bg-gold text-dark">Spread</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Honey</h5><span
+                                                class="badge bg-gold text-dark">Spread</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img src="./assets/images/client3.png" alt="Bakery Items"
+                                    class="img-fluid rounded-4 shadow-sm hover-scale-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SNACKS & BEVERAGES TAB -->
+                    <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                        <div class="row align-items-center justify-content-center g-4">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img src="./assets/images/client4.png" alt="Beverages and Snacks"
+                                    class="img-fluid rounded-4 shadow-sm hover-scale-img">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Cheese Biscuits</h5><span
+                                                class="badge badge-outline-gold">Snack</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Assorted Biscuits</h5><span
+                                                class="badge badge-outline-gold">Snack</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Fruletta Juice</h5><span
+                                                class="badge bg-gold text-dark">Beverage</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Assorted Juices</h5><span
+                                                class="badge bg-gold text-dark">Beverage</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-item-card glass-card p-4 text-center h-100">
+                                            <h5 class="font-cinzel text-dark mb-2">Energy Drinks</h5><span
+                                                class="badge bg-gold text-dark">Beverage</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -622,8 +871,9 @@
                             <img src="assets/images/store1.jpg" class="img-fluid rounded mb-3">
                             <h4 class="font-cinzel mb-3">Reservoir Hills</h4>
                             <p class="text-muted mb-4">
+                                Shop 1 Shannon Drive Centre<br>
                                 21 Shannon Drive<br>
-                                Durban, KwaZulu-Natal
+                                Durban
                             </p>
                             <a href="https://wa.me/27825184425" target="_blank"
                                 class="btn btn-outline-dark btn-sm rounded-pill px-4">Get Directions</a>
@@ -634,10 +884,11 @@
                         <div
                             class="location-card bg-white p-5 text-center h-100 shadow-sm hover-lift border-bottom-gold">
                             <img src="assets/images/store1.jpg" class="img-fluid rounded mb-3">
-                            <h4 class="font-cinzel mb-3">South Beach</h4>
+                            <h4 class="font-cinzel mb-3">North Beach</h4>
                             <p class="text-muted mb-4">
-                                46 Prince Street<br>
-                                Durban, KwaZulu-Natal
+                                Shop 30 Mangrove Beach Centre<br>
+                                91 Somtseu Road<br>
+                                Durban
                             </p>
                             <a href="#" class="btn btn-outline-dark btn-sm rounded-pill px-4">Get Directions</a>
                         </div>
@@ -647,10 +898,11 @@
                         <div
                             class="location-card bg-white p-5 text-center h-100 shadow-sm hover-lift border-bottom-gold">
                             <img src="assets/images/store1.jpg" class="img-fluid rounded mb-3">
-                            <h4 class="font-cinzel mb-3">North Beach</h4>
+                            <h4 class="font-cinzel mb-3">South Beach</h4>
                             <p class="text-muted mb-4">
-                                Durban Central<br>
-                                KwaZulu-Natal
+                                Shop 1 South Beach Shopping Centre<br>
+                                46 Prince Street<br>
+                                Durban
                             </p>
                             <a href="#" class="btn btn-outline-dark btn-sm rounded-pill px-4">Get Directions</a>
                         </div>
