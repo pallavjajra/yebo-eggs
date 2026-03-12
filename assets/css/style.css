@@ -382,6 +382,62 @@ section {
 }
 
 /* ===============================
+   ABOUT SECTION
+================================== */
+.about-section {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.about-feature-box:hover .feature-icon-wrapper {
+    background: var(--gold-accent) !important;
+    color: #fff !important;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+}
+
+.feature-icon-wrapper {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.about-image-wrapper .main-img-container {
+    transition: transform 0.5s ease;
+}
+
+.about-image-wrapper:hover .main-img-container {
+    transform: translateY(-5px);
+}
+
+.overlay-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    border-bottom: 4px solid var(--gold-accent);
+    animation: floatingCard 4s ease-in-out infinite;
+}
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* ===============================
    OFFERS SECTION
 ================================== */
 .bg-light-pattern {
@@ -519,21 +575,123 @@ section {
 }
 
 /* ===============================
-   LOCATIONS
+   PREMIUM LOCATIONS
 ================================== */
-.location-card {
-    border-radius: 12px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: var(--shadow-sm);
+.locations-section {
+    background-color: var(--light-bg);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C5A059' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.location-card:hover {
-    border-bottom-color: var(--gold-accent);
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+.premium-location-card {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    height: 100%;
+}
+
+.premium-location-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(197, 160, 89, 0.15);
+    border-color: var(--gold-accent);
+}
+
+.location-img-box {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.location-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.premium-location-card:hover .location-img-box img {
+    transform: scale(1.1);
+}
+
+.location-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.6) 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.location-badge {
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.location-icon-float {
+    width: 50px;
+    height: 50px;
+    background: var(--gold-accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #fff;
+    z-index: 2;
+    transition: transform 0.4s ease;
+}
+
+.premium-location-card:hover .location-icon-float {
+    transform: translateX(-50%) rotate(360deg);
+    background: var(--primary-color);
+    color: var(--gold-accent);
+    border-color: var(--primary-color);
+}
+
+.location-content {
+    border-top: none;
+    padding-top: 35px !important;
+}
+
+.divider-sm {
+    width: 40px;
+    height: 3px;
+    background: var(--gold-accent);
+    border-radius: 2px;
+}
+
+.location-details li {
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-details li:last-child {
+    border-bottom: none;
+}
+
+.hover-fill-gold {
+    transition: all 0.3s ease;
+}
+
+.hover-fill-gold:hover {
+    background-color: var(--gold-accent);
+    border-color: var(--gold-accent);
+    color: #fff !important;
 }
 
 .icon-circle {
@@ -779,7 +937,7 @@ section {
    CUSTOM PRODUCTS TABS & CARDS
 ================================== */
 .custom-tabs .nav-link {
-    color: var(--text-muted);
+    color: #000 !important;
     font-weight: 500;
     border-radius: 50px;
     padding: 12px 25px;
@@ -795,10 +953,14 @@ section {
 }
 
 .custom-tabs .nav-link.active {
-    background: var(--gold-accent);
-    color: #fff;
+    background: var(--gold-accent) !important;
+    color: #fff !important;
     box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
     transform: translateY(-2px);
+}
+
+.custom-tabs .nav-link.active:hover {
+    /* color: var(--gold-accent) !important; */
 }
 
 .product-item-card {
@@ -812,8 +974,11 @@ section {
 .product-item-card::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(135deg, rgba(197,160,89,0.05) 0%, rgba(255,255,255,0) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(197, 160, 89, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -843,11 +1008,13 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
+
 .about-image-grid img {
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
     transition: transform 0.4s ease;
 }
+
 .about-image-grid img:hover {
     transform: scale(1.03);
     box-shadow: var(--shadow-md);
